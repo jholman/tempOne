@@ -1,0 +1,9 @@
+
+p {
+  display: inline-block;
+  background-color: green;
+}
+
+marquee {
+  width: 5em;
+}
