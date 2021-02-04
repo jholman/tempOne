@@ -18,10 +18,10 @@ app.use(bodyParser.urlencoded());
 app.use(express.static("public"));
 
 
-app.get("/", (req, res) => {
+app.get("/", (request, response) => {
   if (Math.random() > 0.5) {
     console.log("we got lucky");
-    res.render("index");
+    response.render("index");
   } else {
     res.status(500).send("oohhhhhh no");
   }
