@@ -6,6 +6,9 @@
   "author": "Jeremy Holman <jholman12@bcit.ca>",
   "license": "UNLICENSED",
   "private": true,
+  "scripts": {
+    "hello": "echo 'hello'"
+  },
   "dependencies": {
     "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
