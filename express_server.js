@@ -17,8 +17,8 @@ app.use(bodyParser.json());
 app.use(express.static("public"));
 
 
-app.get("/", (req, res) => {
-  res.render("index");
+app.get("/", (request, response) => {
+  response.render("index");
 })
 
 
