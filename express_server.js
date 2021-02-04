@@ -14,11 +14,17 @@ const app = express();
 
 app.set("view engine", "ejs");
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded());
 app.use(express.static("public"));
 
 
 app.get("/", (req, res) => {
-  res.render("index");
+  if (Math.random() > 0.5) {
+    console.log("we got lucky");
+    res.render("index");
+  } else {
+    res.status(500).send("oohhhhhh no");
+  }
 })
 
 
