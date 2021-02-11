@@ -1,1 +1,4 @@
 node_modules/
+build/
+dist/
+.ds_store
