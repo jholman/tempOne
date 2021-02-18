@@ -27,5 +27,21 @@ app.get("/", (request, response) => {
   }
 })
 
+app.get("/dog", (req, res) => {
+  res.set('Content-Type', 'text/plain');
+  res.send(`
+             __
+            /  \\
+           / ..|\\
+          (_\\  |_)
+          /  \\@ 
+         /     \\
+    __  /  \`   |
+    \\ \\/ \  | _\\
+     \\   /_ || \\\\_
+      \\____)|_) \\_)
+  `);
+});
+
 
 app.listen(PORT, () => console.log(`app up on port ${PORT}`));
