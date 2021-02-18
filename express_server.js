@@ -28,6 +28,7 @@ app.get("/", (request, response) => {
 })
 
 app.get("/dog", (req, res) => {
+  res.set('Content-Type', 'text/plain');
   res.send(`
              __
             /  \\
